@@ -16,6 +16,6 @@ use this template https://www.bootdey.com/snippets/view/stories-like-WhatsApp by
 
 
 ### Submitting 
-Push the task to your github account and send the repo link to m`hr@testinggeeks.net`
+Push the task to your github account and send the repo link to `hr@testinggeeks.net`
 
 
