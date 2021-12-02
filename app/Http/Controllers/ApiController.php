@@ -69,6 +69,6 @@ class ApiController extends Controller
                 'title'=>'Android Developer',
             ]
         ];
-        return response()->json(['features'=>$featuresList,'success'=>true]);
+        return response()->json(['features'=>$featuresList, 'team_members' => $teamMembers, 'success'=>true]);
     }
 }

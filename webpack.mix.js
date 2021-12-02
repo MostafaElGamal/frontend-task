@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
+var path = require("path");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +12,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .vue()
-    .sass('resources/sass/app.scss', 'public/css');
+mix.webpackConfig({
+  resolve: {
+    modules: [path.resolve(__dirname), path.resolve("./node_modules/")],
+  },
+});
+
+mix.js("vue/app.js", "public/js").vue();
