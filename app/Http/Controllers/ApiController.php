@@ -71,4 +71,69 @@ class ApiController extends Controller
         ];
         return response()->json(['features'=>$featuresList, 'team_members' => $teamMembers, 'success'=>true]);
     }
+
+    public function stories()
+    {
+        $recently_added=[
+            [
+                'name'=>'Pauline I. Bird',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar7.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'Ralph L. Alva',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar1.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'John B. Roman',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar6.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'David O. Buckley',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar2.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'Ralph L. Alva',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar1.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'John B. Roman',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar6.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'David O. Buckley',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar2.png',
+                'date'=>'Today, 02:33',
+            ]
+        ];
+
+        $viewed_stories=[
+            [
+                'name'=>'Pauline I. Bird',
+                'avatar'=>'https://www.bootdey.com/img/Content/avatar/avatar2.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'Ralph L. Alva',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar4.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'John B. Roman',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar8.png',
+                'date'=>'Today, 02:33',
+            ],
+            [
+                'name'=>'David O. Buckley',
+                'avatar'=>'https://bootdey.com/img/Content/avatar/avatar8.png',
+                'date'=>'Today, 02:33',
+            ]
+        ];
+        return response()->json(['recently_added' => $recently_added,'viewed_stories' => $viewed_stories]);
+    }
 }
